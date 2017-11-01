@@ -1,5 +1,20 @@
 # Project Repository
 
+# Project description: Which city would you like to live?
+
+Group: City Fynders (Xiangyu Zhang, Wendan Yan, Yiran Zhang, Zhuochen Han)
+
+The most common question when people decide to start career or make a family is: where shall we live? The project intends to help people make choices for the city they want to live. The current data include (TBD):
+1. Environment  related: city annual weather, precipitation, air pollution, water quality, forest coverage
+2. Human related: Population, crime rate, unemployment rate, school education quality
+3. Ecomony related: cost of living, tax rates
+4. Tertiaty industry related: Restaurant price
+
+The data will be added in the future if we consider other important factors.
+
+
+# Homework 4 description
+
 This homework is done as a group. You will be creating your team repository.
 
 You should do the following:
@@ -9,7 +24,7 @@ You should do the following:
   - Requirements. List the kind of information required to answer the questions described in the README file.
   - Sources. List the data sets that you are considering using, their content, and their availability.
   - Evaluation. The core part of this section is a table that analyzes the choice of data. The columns of the table are data sets described in the "Data" section. The rows are requirements of the data based on the questions you want to answer. You should complete the cells in the table.
-  
+
 Each person in the team should make at least one commit to the repository.
 
 Rubric. Items 1-4 are group grades. Item 5 is an individual grade.
