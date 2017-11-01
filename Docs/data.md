@@ -1,6 +1,6 @@
 Resource：
 1. Nature related data:
-Multi-year climate: Monthly avg temperature, annual avg precipitation, snowfall avg
+Multi-year climate: Monthly average temperature, annual average precipitation, snowfall average
 https://www.infoplease.com/science-health/weather/climate-100-selected-us-cities
 
 Pollution since 2000
