@@ -2,7 +2,7 @@
 
 # Which city would you like to live?
 
-**Group:** *City Fynders (Xiangyu Zhang, Wendan Yan, Yiran Zhang, Zhuochen Han)*
+**City Fynders** *(Xiangyu Zhang, Wendan Yan, Yiran Zhang, Zhuochen Han)*
 
 The most common question when people decide to start career or make a family is: where shall we live? The project intends to help people make choices for the city they want to live. The current data include (TBD):
 1. Environment  related: city annual weather, precipitation, air pollution, water quality, forest coverage
