@@ -7,8 +7,8 @@
 The most common question when people decide to start career or make a family is: where shall we live? The project intends to help people make choices for the city they want to live. The current data include (TBD):
 1. Environment  related: city annual weather, precipitation, air pollution, water quality, forest coverage
 2. Human related: Population, crime rate, unemployment rate, school education quality
-3. Ecomony related: cost of living, tax rates
-4. Tertiaty industry related: Restaurant price
+3. Economics related: cost of living, tax rates
+4. Tertiary industry related: Restaurant price
 
 The data will be added in the future if we consider other important factors.
 
