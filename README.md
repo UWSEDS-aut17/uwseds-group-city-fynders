@@ -13,5 +13,6 @@ The most common question when people decide to start career or make a family is:
 The data will be added in the future if we consider other important factors.
 
 Sample link of the data:
+
 https://www.infoplease.com/science-health/weather/climate-100-selected-us-cities
 https://www.kaggle.com/sogun3/uspollution/data
