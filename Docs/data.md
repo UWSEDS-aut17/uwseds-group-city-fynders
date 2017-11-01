@@ -2,12 +2,6 @@ Resource
 1. Nature related data:
 Multi-year climate: Monthly avg temperature, annual avg precipitation, snowfall avg
 https://www.infoplease.com/science-health/weather/climate-100-selected-us-cities
-<<<<<<< HEAD
-(Has changed into csv format, and uploaded on G-Drive)
-
-
-Evaluation: city | population | average household income | land area | altitude | average daily temp | unemployed rate | churches | city-owned parks | radio station | television station | bars | restaurant | museums | libraries | pro sports teams | colleges | percent with graduate degree | water pollution | air pollution | toxics pollution | hazardous waste | sanitation | living cost | divorce rate | and so on
-=======
 
 Pollution since 2000
 https://www.kaggle.com/sogun3/uspollution/data
@@ -24,4 +18,6 @@ Cost of living in US:
 https://www.expatistan.com/cost-of-living/country/united-states#all-cities
 Tax rates:
 https://taxfoundation.org/sales-tax-rates-major-cities-midyear-2017/
->>>>>>> 5f5b6e8864cce14d92a81ed0599f2019becb9ce7
+
+Evaluation: city | population | average household income | land area | altitude | average daily temp | unemployed rate | churches | city-owned parks | radio station | television station | bars | restaurant | museums | libraries | pro sports teams | colleges | percent with graduate degree | water pollution | air pollution | toxics pollution | hazardous waste | sanitation | living cost | divorce rate | and so on
+=======
