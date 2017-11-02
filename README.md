@@ -11,7 +11,7 @@ The most common question for people who decide to start a career or make a famil
 4. Tertiary industry related: Restaurants, museums, bars
 
 **Highlights:**
-- our Categories of indicators
+- Four Categories of indicators
 - Customized  indicators
 - Geographic Visualization on a map
 
