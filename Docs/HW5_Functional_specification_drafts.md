@@ -26,16 +26,16 @@ Problem Statements
   - Economy
   - Tertiary Industry
 
-### *Research part
+### *Research part*
 
- - Top environmental-friendly (social, developed or culturally important) cities
- - Any correlations of those factors? PCA analysis
+ - *Top environmental-friendly (social, developed or culturally important) cities*
+ - *Any correlations of those factors? PCA analysis*
 
-### Tool part
+### *Tool part*
 
-- Data description and combination
-- Default output from known factor weights: map info and other graphic outputs
-- Interactive (user DIY) user profile*
+- *Data description and combination*
+- *Default output from known factor weights: map info and other graphic outputs*
+- *Interactive (user DIY) user profile*
 
 
 
