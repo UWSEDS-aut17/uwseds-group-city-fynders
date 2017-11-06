@@ -12,7 +12,7 @@ Problem Statements
   - excel
   - python
   - Jupyter notebook
-  
+
   *Zhuochen: This part we should discuss in details, such as whether we design GUI; if we want to show on the webpage, how to do the related API (for example wordpress?); if offline use, do we want to smart phone base or computer base?*
 
   Also, the user need to be willing to choose the criteria as well as allocate
@@ -26,7 +26,7 @@ Problem Statements
   - Economy
   - Tertiary Industry
 
-*### Research part
+### *Research part
 
  - Top environmental-friendly (social, developed or culturally important) cities
  - Any correlations of those factors? PCA analysis
