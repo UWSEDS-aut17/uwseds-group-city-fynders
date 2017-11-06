@@ -22,3 +22,6 @@ Sample links of the data:
 
 https://www.infoplease.com/science-health/weather/climate-100-selected-us-cities
 https://www.kaggle.com/sogun3/uspollution/data
+
+**Problem statement**
+Investigate the best city to live in the US, and create a tool helping users find most suitable city based on their DIY relative importance of factors.
