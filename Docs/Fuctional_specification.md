@@ -33,7 +33,8 @@ Also, users need to be willing to choose the criteria as well as allocate weight
 
 **Welcome Page with default research result**
 - Run `main.py` file to prompt up the Welcome Page
-- Present the general research results of the top cities of the four categories																																																																
+- Present the general research results of the top cities of the four categories
+
 **Users choose ranking criteria and assign weight to each criterion**
 - From all the factors, users pick 5 top criteria they care about and rank them from 1 to 5
 - Calculate the score of each city (Score1* 5 +Score2*4 + Score3 * 3 + Score4*2 + Score5*1) and return the top 3 cities
