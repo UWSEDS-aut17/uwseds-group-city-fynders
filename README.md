@@ -24,4 +24,8 @@ https://www.infoplease.com/science-health/weather/climate-100-selected-us-cities
 https://www.kaggle.com/sogun3/uspollution/data
 
 **Problem statement**
-Investigate the best city to live in the US, and create a tool helping users find most suitable city based on their DIY relative importance of factors.
+
+1. Select criteria for city ranking in the four categories
+2. Data collection and joint
+3. General analysis for four categories
+4. Create tools for user interface for selecting factors and visualizing result
