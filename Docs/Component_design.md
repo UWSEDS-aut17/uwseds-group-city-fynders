@@ -11,8 +11,8 @@
     + Ranking of the five factors that the users choose
 
 ## 2. Correlation analysis:
-- Name: CorrelationAnalysis:
 - What it does: Analyze correlations of different factors, as well as correlations of four basic categories.
+- Name: CorrelationAnalysis.
 - Inputs: (`natural.csv, HumanRelated.csv, Economy.csv, tertiary.csv`) all change into a big DataFrame.Columns include (all float64), we need to change to array for correlation:
 `'Jan_T', 'April_T', 'july_T', 'Oct_T', 'Prep_inch’,  'Prep_days', 'Snowfall_inch', 'Green_score', 'Air', 'Water_quality', 'Toxics', 'Hazardous', 'Sanitation'
 'Percent unemployment', 'State sale tax rate', 'Local tax rate', 'Total rate', 'Median Income', 'AvgTuition', 'Rank_Unemployment', 'Rank_Sales', 'Rank_income', 'Rank_Tution', 'Sum', 'Economy_rank','Total_city_rank'`, etc.
@@ -31,7 +31,7 @@
 
 ## 3. Users choose ranking criteria and assign weight to each criterion
 - What it does: User select five factors which mainly affect the city ranking from their viewpoint and give them score each, then get the city ranking results based on their choice.
-Name: UserDIYRanking
+- Name: UserDIYRanking
 - Inputs:
 	- Factors, score
 - Outputs:
