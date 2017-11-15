@@ -19,7 +19,7 @@
 
 - Outputs: Correlation coefficients and scatter plots of every two factors; correlations of four basic category rankings.
 - How it works: (Pseudo code)
-<pre>
+<pre><code>
 	Def CorrelationAnalysis.py
 		numpy.correlate(column_1, column_2, …, column_n)
         coefficient = numpy.corrcoef(column_1, column_2, …, column_n)
@@ -27,7 +27,7 @@
 			For j < i
 				subplot(column_i, column_j)
 				Text show coefficient(i,j)
-<code>
+</code></pre>
 
 ## 3. Users choose ranking criteria and assign weight to each criterion
 - What it does: User select five factors which mainly affect the city ranking from their viewpoint and give them score each, then get the city ranking results based on their choice.
