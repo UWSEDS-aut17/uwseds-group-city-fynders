@@ -13,9 +13,7 @@
 ## 2. Correlation analysis:
 - Name: CorrelationAnalysis:
 - What it does: Analyze correlations of different factors, as well as correlations of four basic categories.
-- Inputs: (`natural.csv, HumanRelated.csv, Economy.csv, tertiary.csv`) all change into a big DataFrame.
-
-**Columns include (all float64), we need to change to array for correlation**:
+- Inputs: (`natural.csv, HumanRelated.csv, Economy.csv, tertiary.csv`) all change into a big DataFrame.Columns include (all float64), we need to change to array for correlation:
 `'Jan_T', 'April_T', 'july_T', 'Oct_T', 'Prep_inch’,  'Prep_days', 'Snowfall_inch', 'Green_score', 'Air', 'Water_quality', 'Toxics', 'Hazardous', 'Sanitation'
 'Percent unemployment', 'State sale tax rate', 'Local tax rate', 'Total rate', 'Median Income', 'AvgTuition', 'Rank_Unemployment', 'Rank_Sales', 'Rank_income', 'Rank_Tution', 'Sum', 'Economy_rank','Total_city_rank'`, etc.
 
