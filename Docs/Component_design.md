@@ -3,12 +3,12 @@
 ## 1. Rank the city for each criterion:
 
 - What it does. This component will rank the city for each factors within the four categories, such as number of museums, crime rate, average household income.  The idea is to add up the rank number for the factors within a category or the factors that users choose and then give the total rank (small number first).
-- Name. def Rank_City (Factors_list)
-- Inputs.  Factors_list: a list of factors that users care about; the length of the list is five because we will allow users to choose up to 5 factors
-- Outputs. A `csv` file that contains the ranking of the cities for each factor
+- Name: RankCity (Factors_list)
+- Inputs: Factors_list: a list of factors that users care about; the length of the list is five because we will allow users to choose up to 5 factors
+- Outputs: `csv` file that contains the ranking of the cities for each factor
 - How it works
     + Ranking of all factors
-    +Ranking of the five factors that the users choose
+    + Ranking of the five factors that the users choose
 
 ## 2. Correlation analysis:
 - Name: CorrelationAnalysis:
@@ -29,7 +29,7 @@
 
 ## 3. Users choose ranking criteria and assign weight to each criterion
 - What it does: User select five factors which mainly affect the city ranking from their viewpoint and give them score each, then get the city ranking results based on their choice.
-Name: User_DIYranking
+Name: UserDIYRanking
 - Inputs:
 	- Factors, score
 - Outputs:
@@ -54,6 +54,7 @@ Name: User_DIYranking
     + Longitude: float64
     + Latitude: float64
     + Four big category rank: float64
+    
     **Default graph design**
     + Type: scatter geo
     + Location Mode: USA
