@@ -19,13 +19,15 @@
 
 - Outputs: Correlation coefficients and scatter plots of every two factors; correlations of four basic category rankings.
 - How it works: (Pseudo code)
-	`Def CorrelationAnalysis.py
+<pre>
+	Def CorrelationAnalysis.py
 		numpy.correlate(column_1, column_2, …, column_n)
         coefficient = numpy.corrcoef(column_1, column_2, …, column_n)
 		For i < n
 			For j < i
 				subplot(column_i, column_j)
-				Text show coefficient(i,j)``
+				Text show coefficient(i,j)
+<code>
 
 ## 3. Users choose ranking criteria and assign weight to each criterion
 - What it does: User select five factors which mainly affect the city ranking from their viewpoint and give them score each, then get the city ranking results based on their choice.
@@ -49,12 +51,14 @@ Name: UserDIYRanking
 ## 4. Visualization ranking results on the US map
 - What it does: Present the ranking information on the United States map.
 - Name: City and Layout
-- Inputs: **City information from pandas dataframe**			
+- Inputs:
+
+    **City information from pandas dataframe**			
     + City: object
     + Longitude: float64
     + Latitude: float64
     + Four big category rank: float64
-    
+
     **Default graph design**
     + Type: scatter geo
     + Location Mode: USA
