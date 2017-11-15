@@ -45,8 +45,8 @@ Name: UserDIYRanking
 	- get_selected_factors(factor)
 	- get_selected_score(score)
 	- data[‘sum_chosen_factors’] = (factor1 * score1 + factor2 * score2 + factor3 *      score3 + factor4 * score4 + factor5 * score5)      
-- data[‘DIY_ranking’] = data[‘sum_chosen_factors’]
-- result_output(data)
+    - data[‘DIY_ranking’] = data[‘sum_chosen_factors’]
+    - result_output(data)
 
 ## 4. Visualization ranking results on the US map
 - What it does: Present the ranking information on the United States map.
@@ -66,6 +66,7 @@ Name: UserDIYRanking
 
 - Outputs: a graph with all the rank information
 - How it works:
+
 <pre><code>
     city = dict(
             type = 'scattergeo',
