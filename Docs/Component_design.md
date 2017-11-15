@@ -66,32 +66,34 @@ Name: UserDIYRanking
 
 - Outputs: a graph with all the rank information
 - How it works:
-`city = dict(
-        type = 'scattergeo',
-        locationmode = 'USA-states',
-        lon = df_sub['longitude'],
-        lat = df_sub['latitude'],
-        text = df_sub[['City','Human_related_rank']].apply(combine,axis=1),
-        marker = dict(
-            size = df_sub['Human_related_rank']*10,
-            color = colors[i],
-            line = dict(width=0.5, color='rgb(40,40,40)'),
-            sizemode = 'area'
-        ),
-        name = '{0} - {1}'.format(lim[0],lim[1]) )
-    cities.append(city)
+<pre><code>
+    city = dict(
+            type = 'scattergeo',
+            locationmode = 'USA-states',
+            lon = df_sub['longitude'],
+            lat = df_sub['latitude'],
+            text = df_sub[['City','Human_related_rank']].apply(combine,axis=1),
+            marker = dict(
+                size = df_sub['Human_related_rank']*10,
+                color = colors[i],
+                line = dict(width=0.5, color='rgb(40,40,40)'),
+                sizemode = 'area'
+            ),
+            name = '{0} - {1}'.format(lim[0],lim[1]) )
+        cities.append(city)
 
-layout = dict(
-        title = 'The human related ranking of US big cities',
-        showlegend = True,
-        geo = dict(
-            scope='usa',
-            projection=dict( type='albers usa' ),
-            showland = True,
-            landcolor = 'rgb(217, 217, 217)',
-            subunitwidth=1,
-            countrywidth=1,
-            subunitcolor="rgb(255, 255, 255)",
-            countrycolor="rgb(255, 255, 255)"
-        ),
-    )`
+    layout = dict(
+            title = 'The human related ranking of US big cities',
+            showlegend = True,
+            geo = dict(
+                scope='usa',
+                projection=dict( type='albers usa' ),
+                showland = True,
+                landcolor = 'rgb(217, 217, 217)',
+                subunitwidth=1,
+                countrywidth=1,
+                subunitcolor="rgb(255, 255, 255)",
+                countrycolor="rgb(255, 255, 255)"
+            ),
+        )`
+</code></pre>
