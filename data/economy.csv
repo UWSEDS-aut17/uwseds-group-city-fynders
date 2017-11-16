@@ -1,0 +1,51 @@
+﻿City,State,Percent unemployment,State sale tax,Local tax,Total ,Median Income
+Atlanta,GA,10.2,0.04,0.05,0.09,59345
+Austin,TX,6.3,0.06,0.02,0.08,65886
+Baltimore,MD,11.1,0.06,0.00,0.06,50492
+Birmingham,AL,NaN,0.04,0.06,0.10,NaN
+Boston,MA,6.6,0.06,0.00,0.06,62180
+Buffalo,NY,NaN,0.04,0.05,0.09,NaN
+Charlotte,NC,9.9,0.05,0.03,0.07,65622
+Chicago,IL,9.8,0.06,0.04,0.10,56121
+Cincinnati,OH,7.2,0.06,0.01,0.07,49048
+Cleveland,OH,7.9,0.06,0.02,0.08,35685
+Columbus,OH,6.5,0.06,0.02,0.08,54763
+Dallas,TX,7.9,0.06,0.02,0.08,44838
+Denver,CO,8.9,0.03,0.05,0.08,59155
+Detroit,MI,NaN,0.06,0.00,0.06,NaN
+Hartford,CT,NaN,NaN,NaN,NaN,NaN
+Houston,TX,7.6,0.06,0.02,0.08,48889
+Indianapolis,IN,8.9,0.07,0.00,0.07,56862
+Jacksonville,FL,NaN,0.06,0.01,0.07,NaN
+Kansas City,MO,6.9,0.04,0.04,0.08,59980
+Las Vegas,NV,NaN,0.07,0.01,0.08,NaN
+Los Angeles,CA,11.1,0.07,0.02,0.09,56558
+Louisville,KY,NaN,0.06,0.00,0.06,NaN
+Memphis,TN,NaN,0.07,0.02,0.09,NaN
+Miami,FL,NaN,0.06,0.01,0.07,NaN
+Milwaukee,WI,9.4,0.05,0.01,0.06,44113
+Minneapolis,MN,5.7,0.07,0.01,0.08,64095
+Nashville,TN,7.3,0.07,0.02,0.09,59270
+New Orleans,LA,10.6,0.05,0.05,0.10,48789
+New York,NY,11,0.04,0.05,0.09,58608
+Oklahoma City,OK,5.2,0.05,0.04,0.08,58370
+Orlando,FL,NaN,0.06,0.01,0.07,NaN
+Philadelphia,PA,10.9,0.06,0.02,0.08,48330
+Phoenix,AZ,7.3,0.06,0.03,0.09,60366
+Pittsburgh,PA,7,0.06,0.01,0.07,51907
+Portland,OR,7.9,0.00,0.00,0.00,65554
+Providence,RI,NaN,NaN,NaN,NaN,NaN
+Richmond,VA,NaN,0.05,0.00,0.05,NaN
+Riverside,CA,NaN,0.07,0.01,0.08,NaN
+Rochester,NY,8.4,0.04,0.04,0.08,37111
+Sacramento,CA,NaN,0.07,0.01,0.08,NaN
+Salt Lake City,UT,NaN,NaN,NaN,NaN,NaN
+San Antonio,TX,7.4,0.06,0.02,0.08,54444
+San Diego,CA,9.2,0.07,0.01,0.08,79269
+San Francisco,CA,7.8,0.07,0.01,0.09,90640
+San Jose,CA,8.7,0.07,0.02,0.09,92539
+Seattle,WA,7.2,0.07,0.03,0.10,90303
+St. Louis,MO,9.8,0.04,0.04,0.09,44360
+Tampa,FL,8.8,0.06,0.01,0.07,55039
+Virginia Beach,VA,5.7,0.05,0.01,0.06,76637
+Washington,DC,9.1,0.06,0.00,0.06,72110
