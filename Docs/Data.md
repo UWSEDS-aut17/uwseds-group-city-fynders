@@ -3,7 +3,6 @@ To fulfill the objectives we set in README.md, which is to create a city-ranking
 
 ## Resources
 1. **Environment** related data: Multi-year climate: [Monthly average temperature, annual average precipitation, snowfall average] https://www.infoplease.com/science-health/weather/climate-100-selected-us-cities
-
 Air and water quality: https://www.rd.com/advice/travel/50-cleanest-dirtiest-cities-in-america/
 2. **Human** related data: Crime rate :https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate
 Unemployment Rates for Metropolitan Areas: https://www.bls.gov/web/metro/laummtrk.htm#laummtrk.f.p
