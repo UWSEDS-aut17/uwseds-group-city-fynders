@@ -19,8 +19,8 @@ https://en.wikipedia.org/wiki/List_of_science_centers_in_the_United_States
 |crime rate               |             |  x   |       |             |
 |avg. household income    |             |      |   x   |             |
 |unemployed rate          |             |      |   x   |             |
-|living cost              |             |      |   x   |             |
-|city-owned parks         |             |      |   x   |             |
-|bars                     |             |      |   x   |             |
-|restaurant               |             |      |   x   |             |
-|museums                  |             |      |   x   |             |
+|living cost              |             |      |       |      x      |
+|city-owned parks         |             |      |       |      x      |
+|bars                     |             |      |       |      x      |
+|restaurant               |             |      |       |      x      |
+|museums                  |             |      |       |      x      |
