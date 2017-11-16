@@ -11,16 +11,16 @@ Unemployment Rates for Metropolitan Areas: https://www.bls.gov/web/metro/laummtr
 https://en.wikipedia.org/wiki/List_of_science_centers_in_the_United_States
 
 ## Evaluation
-                         | Environment | Human|Economy|Entertainment|
--------------------------|-------------|------|-------|-------------|
-Monthly avg. temperature |      x      |      |       |             |
-annual avg. precipitation|      x      |      |       |             |
-snowfall avg.            |      x      |      |       |             |
-crime rate               |             |  x   |       |             |
-avg. household income    |             |      |   x   |             |
-unemployed rate          |             |      |   x   |             |
-living cost              |             |      |   x   |             |
-city-owned parks         |             |      |   x   |             |
-bars                     |             |      |   x   |             |
-restaurant               |             |      |   x   |             |
-museums                  |             |      |   x   |             |
+|                         | Environment | Human|Economy|Entertainment|
+|-------------------------|:-----------:|:----:|:-----:|------------:|
+|Monthly avg. temperature |      x      |      |       |             |
+|annual avg. precipitation|      x      |      |       |             |
+|snowfall avg.            |      x      |      |       |             |
+|crime rate               |             |  x   |       |             |
+|avg. household income    |             |      |   x   |             |
+|unemployed rate          |             |      |   x   |             |
+|living cost              |             |      |   x   |             |
+|city-owned parks         |             |      |   x   |             |
+|bars                     |             |      |   x   |             |
+|restaurant               |             |      |   x   |             |
+|museums                  |             |      |   x   |             |
