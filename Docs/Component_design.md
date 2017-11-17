@@ -75,7 +75,7 @@
             lat = df_sub['latitude'],
             text = df_sub[['City','Human_related_rank']].apply(combine,axis=1),
             marker = dict(
-                size = df_sub['Human_related_rank']*10,
+                size = df_sub['Human_related_rank']\*10,
                 color = colors[i],
                 line = dict(width=0.5, color='rgb(40,40,40)'),
                 sizemode = 'area'
