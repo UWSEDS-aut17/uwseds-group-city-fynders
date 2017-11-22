@@ -1,51 +1,51 @@
-﻿City,State,Percent unemployment,State sale tax,Local tax,Total ,Median Income
-Atlanta,GA,10.2,0.04,0.05,0.09,59345
-Austin,TX,6.3,0.06,0.02,0.08,65886
-Baltimore,MD,11.1,0.06,0.00,0.06,50492
-Birmingham,AL,NaN,0.04,0.06,0.10,NaN
-Boston,MA,6.6,0.06,0.00,0.06,62180
-Buffalo,NY,NaN,0.04,0.05,0.09,NaN
-Charlotte,NC,9.9,0.05,0.03,0.07,65622
-Chicago,IL,9.8,0.06,0.04,0.10,56121
-Cincinnati,OH,7.2,0.06,0.01,0.07,49048
-Cleveland,OH,7.9,0.06,0.02,0.08,35685
-Columbus,OH,6.5,0.06,0.02,0.08,54763
-Dallas,TX,7.9,0.06,0.02,0.08,44838
-Denver,CO,8.9,0.03,0.05,0.08,59155
-Detroit,MI,NaN,0.06,0.00,0.06,NaN
-Hartford,CT,NaN,NaN,NaN,NaN,NaN
-Houston,TX,7.6,0.06,0.02,0.08,48889
-Indianapolis,IN,8.9,0.07,0.00,0.07,56862
-Jacksonville,FL,NaN,0.06,0.01,0.07,NaN
-Kansas City,MO,6.9,0.04,0.04,0.08,59980
-Las Vegas,NV,NaN,0.07,0.01,0.08,NaN
-Los Angeles,CA,11.1,0.07,0.02,0.09,56558
-Louisville,KY,NaN,0.06,0.00,0.06,NaN
-Memphis,TN,NaN,0.07,0.02,0.09,NaN
-Miami,FL,NaN,0.06,0.01,0.07,NaN
-Milwaukee,WI,9.4,0.05,0.01,0.06,44113
-Minneapolis,MN,5.7,0.07,0.01,0.08,64095
-Nashville,TN,7.3,0.07,0.02,0.09,59270
-New Orleans,LA,10.6,0.05,0.05,0.10,48789
-New York,NY,11,0.04,0.05,0.09,58608
-Oklahoma City,OK,5.2,0.05,0.04,0.08,58370
-Orlando,FL,NaN,0.06,0.01,0.07,NaN
-Philadelphia,PA,10.9,0.06,0.02,0.08,48330
-Phoenix,AZ,7.3,0.06,0.03,0.09,60366
-Pittsburgh,PA,7,0.06,0.01,0.07,51907
-Portland,OR,7.9,0.00,0.00,0.00,65554
-Providence,RI,NaN,NaN,NaN,NaN,NaN
-Richmond,VA,NaN,0.05,0.00,0.05,NaN
-Riverside,CA,NaN,0.07,0.01,0.08,NaN
-Rochester,NY,8.4,0.04,0.04,0.08,37111
-Sacramento,CA,NaN,0.07,0.01,0.08,NaN
-Salt Lake City,UT,NaN,NaN,NaN,NaN,NaN
-San Antonio,TX,7.4,0.06,0.02,0.08,54444
-San Diego,CA,9.2,0.07,0.01,0.08,79269
-San Francisco,CA,7.8,0.07,0.01,0.09,90640
-San Jose,CA,8.7,0.07,0.02,0.09,92539
-Seattle,WA,7.2,0.07,0.03,0.10,90303
-St. Louis,MO,9.8,0.04,0.04,0.09,44360
-Tampa,FL,8.8,0.06,0.01,0.07,55039
-Virginia Beach,VA,5.7,0.05,0.01,0.06,76637
-Washington,DC,9.1,0.06,0.00,0.06,72110
+﻿City,State,Percent unemployment,State sale tax rate,Local tax rate,Total rate,Median Income,AvgTuition
+Atlanta,GA,10.2,0.040,0.049,0.089,59345,10309
+Austin,TX,6.3,0.063,0.020,0.083,65886,8729
+Baltimore,MD,11.1,0.060,0.000,0.060,50492,12273
+Birmingham,AL,NaN,4.050,0.060,0.100,NaN,NaN
+Boston,MA,6.6,0.063,0.000,0.063,62180,20442
+Buffalo,NY,NaN,0.040,0.048,0.088,NaN,16305
+Charlotte,NC,9.9,0.048,0.025,0.073,65622,NaN
+Chicago,IL,9.8,0.063,0.040,0.103,56121,7844
+Cincinnati,OH,7.2,0.058,0.013,0.070,49048,6304
+Cleveland,OH,7.9,0.058,0.023,0.080,35685,6304
+Columbus,OH,6.5,0.058,0.018,0.075,54763,6304
+Dallas,TX,7.9,0.063,0.020,0.083,44838,8729
+Denver,CO,8.9,0.029,0.048,0.077,59155,10468
+Detroit,MI,NaN,0.060,0.000,0.060,NaN,6791
+Hartford,CT,NaN,NaN,NaN,NaN,NaN,NaN
+Houston,TX,7.6,0.063,0.020,0.083,48889,8729
+Indianapolis,IN,8.9,0.070,0.000,0.070,56862,6515
+Jacksonville,FL,NaN,0.060,0.010,0.070,NaN,7996
+Kansas City,MO,6.9,0.042,0.041,0.083,59980,9497
+Las Vegas,NV,NaN,0.069,0.013,0.082,NaN,9687
+Los Angeles,CA,11.1,0.073,0.020,0.093,56558,13277
+Louisville,KY,NaN,0.060,0.000,0.060,NaN,NaN
+Memphis,TN,NaN,0.070,0.023,0.093,NaN,8759
+Miami,FL,NaN,0.060,0.010,0.070,NaN,7996
+Milwaukee,WI,9.4,0.050,0.006,0.056,44113,4357
+Minneapolis,MN,5.7,0.069,0.009,0.078,64095,6656
+Nashville,TN,7.3,0.070,0.023,0.093,59270,NaN
+New Orleans,LA,10.6,0.050,0.050,0.100,48789,6125
+New York,NY,11,0.040,0.049,0.089,58608,16305
+Oklahoma City,OK,5.2,0.045,0.039,0.084,58370,5464
+Orlando,FL,NaN,0.060,0.005,0.065,NaN,7996
+Philadelphia,PA,10.9,0.060,0.020,0.080,48330,10852
+Phoenix,AZ,7.3,0.056,0.030,0.086,60366,10492
+Pittsburgh,PA,7,0.060,0.010,0.070,51907,10852
+Portland,OR,7.9,0.000,0.000,0.000,65554,NaN
+Providence,RI,NaN,NaN,NaN,NaN,NaN,NaN
+Richmond,VA,NaN,0.053,0.000,0.053,NaN,NaN
+Riverside,CA,NaN,0.073,0.005,0.078,NaN,NaN
+Rochester,NY,8.4,0.040,0.040,0.080,37111,NaN
+Sacramento,CA,NaN,0.073,0.010,0.083,NaN,13277
+Salt Lake City,UT,NaN,NaN,NaN,NaN,NaN,NaN
+San Antonio,TX,7.4,0.063,0.020,0.083,54444,8729
+San Diego,CA,9.2,0.073,0.005,0.078,79269,13277
+San Francisco,CA,7.8,0.073,0.013,0.085,90640,13277
+San Jose,CA,8.7,0.073,0.015,0.088,92539,13277
+Seattle,WA,7.2,0.065,0.031,0.096,90303,9929
+St. Louis,MO,9.8,0.042,0.045,0.087,44360,NaN
+Tampa,FL,8.8,0.060,0.010,0.070,55039,7996
+Virginia Beach,VA,5.7,0.053,0.007,0.060,76637,13255
+Washington,DC,9.1,0.058,0.000,0.058,72110,NaN
