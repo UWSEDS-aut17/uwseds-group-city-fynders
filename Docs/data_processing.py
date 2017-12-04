@@ -123,6 +123,6 @@ def create_rank(natural, human, economy, tertiary, Lat, Lon):
     rank['Latitude'] = Lat
     rank['Longitude'] = Lon
 
-    rank.to_csv("rank_file.csv")
+    rank.to_csv("../data/rank_file.csv")
 
     return rank
