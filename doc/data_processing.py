@@ -3,6 +3,9 @@ import numpy as np
 
 
 def read_data():
+    """
+    Read data from Github repository. The file is small, so we upload it in the Github.
+    """
     # Read data from github
     natural = pd.read_csv('../data/Natural.csv')
     human = pd.read_csv('../data/human_related.csv')
@@ -13,6 +16,11 @@ def read_data():
 
 
 def data_rank(natural, human, economy, tertiary):
+    """
+    Get data ranks for four different categories related to city choices.
+
+    natural, human, economy, tertiary: all in DataFrame format.
+    """
 
     #natural
     natural['Air'] = natural['Air'].rank(ascending=0)
@@ -82,6 +90,11 @@ def data_rank(natural, human, economy, tertiary):
 
 
 def create_rank(natural, human, economy, tertiary, Lat, Lon):
+    """
+    make all rank into one Dataframe and save as csv file.
+
+    All inputs are in DataFrame format.
+    """
 
     rank = pd.DataFrame()
 
