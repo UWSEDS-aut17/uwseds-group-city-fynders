@@ -1,6 +1,7 @@
 import plotly
 import plotly.plotly as py
 
+
 def usmap(df, category='total'):
     """
     This function returns a dotted us map based on the rank DataFrame, and layout category.
