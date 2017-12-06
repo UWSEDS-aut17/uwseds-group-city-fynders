@@ -106,5 +106,5 @@ def usmap(df, category='total'):
             ),
         )
 
-    fig = dict( data=cities, layout=layout )
+    fig = dict(data=cities, layout=layout)
     return plotly.offline.plot(fig, validate=False, filename=layout_filename)
