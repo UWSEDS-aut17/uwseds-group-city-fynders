@@ -3,7 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
 
-def layout_setup(pairs):
+def layout_setup(pairs, f):
     """
     This function returns a layout of the user interface
 
@@ -54,6 +54,23 @@ def layout_setup(pairs):
                                 style={'width': 200, 'color': 'black', 'backgroundColor': 'lightblue', 'height': 70,'fontSize': 15,'marginRight':100}),
                 html.Button('Teritary Industry Rank', id='Trank',
                                 style={'width': 200, 'color': 'black', 'backgroundColor': 'lightblue', 'height': 70,'fontSize': 15}),
+        ])),
+
+        html.Center(html.Div([
+            dcc.Graph(id='graph-with-slider'),
+            dcc.Slider(
+                id='factor',
+                min=0,
+                max=7,
+                value=4,
+                step=None,
+                marks={i: f[i] for i in range(8)})
+        ])),
+        html.Br(),
+        html.Br(),
+        html.Center(html.Div([
+            html.P("Now choose factors you care about",
+                style={'color': 'black','fontFamily':'Helvetica', 'fontSize': 20}),
         ])),
         # First important factor
         html.Div([
