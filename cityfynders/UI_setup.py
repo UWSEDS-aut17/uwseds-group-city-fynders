@@ -24,38 +24,66 @@ def layout_setup(pairs, f):
     """
 
     lay = html.Div([
+
         html.Div([
             html.Br(),
             html.Br(),
             html.Center(html.H1("Find Your Dream City to Live in the US",
-                                style={'color': 'lavender', 'fontFamily': 'Helvetica', 'fontSize': 50}),
+                                style={ 'color': 'lavender', 'fontFamily': 'Helvetica', 'fontSize': 50}),
                        ),
             html.Center(html.P("Powerd by City Fynders",
                                style={'color': 'black','fontFamily':'Helvetica', 'fontSize': 20}),
                        ),
             html.Br(),
             html.Br()],
-                style={'backgroundColor': 'FireBrick', 'margin': 0,'padding': 0}),
-            html.Br(),
-            html.Br(),
-
-        html.Center(html.Div([
-            html.P(INFORMATION, style={'color': 'black','fontFamily':'Helvetica', 'fontSize': 15, 'width': '70%'}),
-            html.Img(src="http://travelquaz.com/wp-content/uploads/2015/09/photo-travel-holidays-to-the-usa-america-visit-usa-images.jpg",
-                        style={'width': '70%'})
-        ])),
-
-        html.Br(),
-        html.Br(),
+                style={'class':'l-r','backgroundColor': 'FireBrick', 'margin': 0,'padding': 0}),
 
         html.Div([
-           html.Center(html.Button('Total General Rank', id='Total',
+            html.Br(),
+            html.Br(),
+            html.Div(html.P(INFORMATION,
+                              style={'margin-left': '10%','float':'left','width': '500px','height': '500px','color':'black','fontFamily':'Helvetica', 'fontSize': 20 }),
+                       ),
+            html.Center(html.Img(src="http://travelquaz.com/wp-content/uploads/2015/09/photo-travel-holidays-to-the-usa-america-visit-usa-images.jpg"),
+                       style={'margin-right': '10%','float':'right'})
+        ]),
+
+
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        html.Div([
+           html.Center(html.Button('Total Rank', id='Total',
                                 style={'width': 200, 'color': 'white', 'backgroundColor': 'FireBrick', 'height': 70,'fontSize': 15})),
         ]),
 
         html.Br(),
         html.Br(),
-
         html.Center(html.Div([
                 html.Button('Human Related Rank', id='Hrank',
                                 style={'width': 200, 'color': 'black', 'backgroundColor': 'lightblue', 'height': 70,'fontSize': 15,'marginRight':100}),
@@ -67,15 +95,14 @@ def layout_setup(pairs, f):
                                 style={'width': 200, 'color': 'black', 'backgroundColor': 'lightblue', 'height': 70,'fontSize': 15}),
         ])),
 
+        html.Br(),
+        html.Br(),
         html.Center(html.Div([
-            dcc.Graph(id='graph-with-slider'),
-            dcc.Slider(
-                id='factor',
-                min=0,
-                max=7,
-                value=4,
-                step=None,
-                marks={i: f[i] for i in range(8)})
+            html.Center(html.H1("Factor Correlation Graph",
+                    style={ 'color': 'black', 'fontFamily': 'Helvetica', 'fontSize': 20}),
+                       ),
+            html.Center(html.Img(src="https://user-images.githubusercontent.com/32367015/33920542-67cd1d80-df73-11e7-9dc5-48cdc7a5c81e.png"),
+                       )
         ])),
         html.Br(),
         html.Br(),
