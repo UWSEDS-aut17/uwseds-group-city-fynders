@@ -2,7 +2,7 @@ import plotly
 import plotly.plotly as py
 
 
-def usmap(df, category='total'):
+def usmap_default(df, category='total'):
     """
     This function returns a dotted us map based on the rank
     DataFrame, and layout category.
@@ -128,3 +128,86 @@ def usmap(df, category='total'):
 
     fig = dict(data=cities, layout=layout)
     return plotly.offline.plot(fig, validate=False, filename=layout_filename)
+
+def newdf(rank, First_care, Second_care, Third_care, Fourth_care, Fifth_care):
+    """
+    This function returns a new data frame of ranked cities based on the 5 factors of users' choice
+
+    rank: pandas data frame
+    First_care: the first care column name chose from rank
+    Second_care: the second care column name chose from rank
+    Third_care: the third care column name chose from rank
+    Fourth_care: the fourth care column name chose from rank
+    Fifth_care: the fifth care column name chose from rank
+    """
+
+    df = pd.DataFrame()
+    df['City'] = rank['City']
+    df['First'] = rank[First_care]
+    df['Second'] = rank[Second_care]
+    df['Third'] = rank[Third_care]
+    df['Fourth'] = rank[Fourth_care]
+    df['Fifth'] = rank[Fifth_care]
+    df['Total'] = (df['First']*5+df['Second']*4+df['Third']*3+df['Fourth']*2+df['Fifth']*1).rank(ascending=1)
+    df = df.sort_values('Total', ascending=1)
+    df['reverse_rank'] = df['Total'].rank(ascending=0)
+    df['longitude'] = rank['Longitude']
+    df['latitude'] = rank['Latitude']
+    df['text'] = df['City'] + '<br># Final Rank ' + ': ' + (df['Total']).astype(str) +\
+    '<br># ' + First_care + ': ' + (df['First']).astype(str)+ '<br># ' + Second_care +\
+    ': ' + (df['Second']).astype(str) + '<br># ' + Third_care + ': ' + (df['Third']).astype(str)+\
+    '<br># ' + Fourth_care + ': ' + (df['Fourth']).astype(str) + '<br># '+ Fifth_care +\
+    ': ' + (df['Fifth']).astype(str)
+    return df
+
+
+def usmap_choose(df):
+    limits = [(0,10),(10,20),(20,30),(30,40),(40,50)]
+    colors = ["rgb(0,116,217)","rgb(255,65,54)","rgb(133,20,75)","rgb(255,133,27)","lightgrey"]
+    cities = []
+
+
+    for i in range(len(limits)):
+        lim = limits[i]
+        df_sub = df[lim[0]:lim[1]]
+        city = dict(
+            type = 'scattergeo',
+            locationmode = 'USA-states',
+            lon = df_sub['longitude'],
+            lat = df_sub['latitude'],
+            text = df_sub['text'],
+            marker = dict(
+                size = df_sub['reverse_rank']*15,
+                color = colors[i],
+                line = dict(width=0.5, color='rgb(40,40,40)'),
+                sizemode = 'area'
+            ),
+            name = '{0} - {1}'.format(lim[0],lim[1]) )
+        cities.append(city)
+
+        layout = dict(
+            title = 'Your Dream City Results',
+            showlegend = True,
+            geo = dict(
+                scope='usa',
+                projection=dict( type='albers usa' ),
+                showland = True,
+                landcolor = 'rgb(217, 217, 217)',
+                subunitwidth=1,
+                countrywidth=1,
+                subunitcolor="rgb(255, 255, 255)",
+                countrycolor="rgb(255, 255, 255)"
+            ),
+        )
+        fig = dict( data=cities, layout=layout )
+        
+    return {   
+        plotly.offline.plot( fig, validate=False )     
+    }    
+    
+    
+    
+    
+    
+    
+    

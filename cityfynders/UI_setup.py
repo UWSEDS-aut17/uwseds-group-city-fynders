@@ -77,6 +77,8 @@ def layout_setup(pairs, f):
         html.Br(),
         html.Br(),
         html.Br(),
+        html.Br(),
+        html.Br(),
         html.Div([
            html.Center(html.Button('Total Rank', id='Total',
                                 style={'width': 200, 'color': 'white', 'backgroundColor': 'FireBrick', 'height': 70,'fontSize': 15})),
