@@ -3,7 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
 
-def layout_setup(pairs, f):
+def layout_setup(pairs):
     """
     This function returns a layout of the user interface
 
@@ -170,34 +170,3 @@ def layout_setup(pairs, f):
         html.Div(dcc.Graph(id='Tertiary-graphic'))
     ])
     return lay
-
-def newdf(rank, First_care, Second_care, Third_care, Fourth_care, Fifth_care):
-    """
-    This function returns a new data frame from user choices
-
-    rank: pandas data frame
-    First_care: the first care column name chose from rank
-    Second_care: the second care column name chose from rank
-    Third_care: the third care column name chose from rank
-    Fourth_care: the fourth care column name chose from rank
-    Fifth_care: the fifth care column name chose from rank
-    """
-
-    df = pd.DataFrame()
-    df['City'] = rank['City']
-    df['First'] = rank[First_care]
-    df['Second'] = rank[Second_care]
-    df['Third'] = rank[Third_care]
-    df['Fourth'] = rank[Fourth_care]
-    df['Fifth'] = rank[Fifth_care]
-    df['Total'] = (df['First']*5+df['Second']*4+df['Third']*3+df['Fourth']*2+df['Fifth']*1).rank(ascending=1)
-    df = df.sort_values('Total', ascending=1)
-    df['reverse_rank'] = df['Total'].rank(ascending=0)
-    df['longitude'] = rank['Longitude']
-    df['latitude'] = rank['Latitude']
-    df['text'] = df['City'] + '<br># Final Rank ' + ': ' + (df['Total']).astype(str) +\
-    '<br># ' + First_care + ': ' + (df['First']).astype(str)+ '<br># ' + Second_care +\
-    ': ' + (df['Second']).astype(str) + '<br># ' + Third_care + ': ' + (df['Third']).astype(str)+\
-    '<br># ' + Fourth_care + ': ' + (df['Fourth']).astype(str) + '<br># '+ Fifth_care +\
-    ': ' + (df['Fifth']).astype(str)
-    return df
