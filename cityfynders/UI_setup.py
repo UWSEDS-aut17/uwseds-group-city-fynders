@@ -11,6 +11,18 @@ def layout_setup(pairs, f):
            the second is the relative name for each column in the dropdown choices
     """
 
+    INFORMATION = """
+    City information is always an interesting topic in people’s daily life. Many websites
+    have their own ranking results based on unique preference. However, it is hard to say
+    which city is the best choice for everyone. We created a tool for people to choose the
+    factors matter to them instead of ranking with some information they don’t care about.
+    We divided the factors into four main parts: human related (Population, Crime, College,
+    Hospital, etc), economy (Income, Percent Unemployment, etc), natural (Green
+    Score, Air, Water, etc) and tertiary (Restaurant, Museum, Library, etc). We
+    combined our data from many different sources like former ranking websites and some
+    departments collected data. We provide some buttons below to help you make your own choice.
+    """
+
     lay = html.Div([
         html.Div([
             html.Br(),
@@ -24,26 +36,25 @@ def layout_setup(pairs, f):
             html.Br(),
             html.Br()],
                 style={'backgroundColor': 'FireBrick', 'margin': 0,'padding': 0}),
-
-        html.Div([
             html.Br(),
             html.Br(),
-            html.Center(html.Img(src="http://travelquaz.com/wp-content/uploads/2015/09/photo-travel-holidays-to-the-usa-america-visit-usa-images.jpg"))
-        ]),
 
-        html.Center(html.Div([html.P("Ranking by all the fators",
-                           style={'color': 'black','fontFamily':'Helvetica', 'fontSize': 20}),
+        html.Center(html.Div([
+            html.P(INFORMATION, style={'color': 'black','fontFamily':'Helvetica', 'fontSize': 15, 'width': '70%'}),
+            html.Img(src="http://travelquaz.com/wp-content/uploads/2015/09/photo-travel-holidays-to-the-usa-america-visit-usa-images.jpg",
+                        style={'width': '70%'})
         ])),
+
+        html.Br(),
+        html.Br(),
 
         html.Div([
            html.Center(html.Button('Total General Rank', id='Total',
                                 style={'width': 200, 'color': 'white', 'backgroundColor': 'FireBrick', 'height': 70,'fontSize': 15})),
         ]),
 
-        html.Center(html.Div([
-            html.P("Ranking by four main factors separately",
-                style={'color': 'black','fontFamily':'Helvetica', 'fontSize': 20}),
-        ])),
+        html.Br(),
+        html.Br(),
 
         html.Center(html.Div([
                 html.Button('Human Related Rank', id='Hrank',
