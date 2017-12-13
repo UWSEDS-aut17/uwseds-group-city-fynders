@@ -195,4 +195,7 @@ def user_DIY_graph(Search, First_care, Second_care, Third_care, Fourth_care, Fif
         plotly.offline.plot( fig, validate=False )
     }
 
-app.run_server()
+
+
+if __name__ == "__main__":
+    app.run_server()
