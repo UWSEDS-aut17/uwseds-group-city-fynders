@@ -6,6 +6,8 @@ import dash_html_components as html
 import plotly
 import plotly.graph_objs as go
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+import geopy as gy
+from geopy.geocoders import Nominatim
 
 import cityfynders.data_processing as dp
 from cityfynders.plotly_usmap import usmap
@@ -19,7 +21,17 @@ import cityfynders.UI_setup as UI_setup
 (natural, human, economy, tertiary) = dp.data_rank(natural, human, economy, tertiary)
 
 # Get geo-info
-(Lat, Lon) = dp.find_loc(human)
+def find_loc(dataframe):
+    geolocator = Nominatim()
+    lat = []
+    lon = []
+    for index, row in dataframe.iterrows():
+        loc = geolocator.geocode(row['City'] + ' ' + row['State'] + ' United States')
+        lat.append(loc.latitude)
+        lon.append(loc.longitude)
+    return lat, lon
+
+(Lat, Lon) = find_loc(human)
 
 # Create rank DataFrame
 rank = dp.create_rank(natural, human, economy, tertiary, Lat, Lon)
