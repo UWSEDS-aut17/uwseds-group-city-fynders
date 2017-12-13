@@ -38,25 +38,25 @@ The interacted webpag-based tool is designed for two main usages:
 2. Clone the `cityfynders` by typing the following code in terminal:
 
 <pre><code>
-    git clone https://github.com/UWSEDS-aut17/uwseds-group-city-fynders.git
+git clone https://github.com/UWSEDS-aut17/uwseds-group-city-fynders.git
 </code></pre>
 
 3. In the `uwseds-group-city-fynders` directory, initiate the setup (it will automatically install the packages if you do not have them):
 
 <pre><code>
-    python setup.py develop --user
+python setup.py develop --user
 </code></pre>
 
 4. Run the script to generate webpage-based UI server:
 
 <pre><code>
-    python ./scripts/city_script.py
+python ./scripts/city_script.py
 </code></pre>
 
 5. Copy the following url in the browser:
 
 <pre><code>
-    http://127.0.0.1:8050/
+http://127.0.0.1:8050/
 </code></pre>
 
 If your terminal shows the different url, copy that one.
