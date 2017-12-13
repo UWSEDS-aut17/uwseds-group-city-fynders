@@ -1,6 +1,4 @@
-<p align="center">
 ![usa-cities-collage](https://user-images.githubusercontent.com/32344254/32299959-b57f7bf6-bf14-11e7-8c03-90c0a7e29d0a.jpg)
-</p>
 
 # Which city would you like to live in?
 
