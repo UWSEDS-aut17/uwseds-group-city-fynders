@@ -6,8 +6,8 @@ import numpy as np
 import geopy as gy
 from geopy.geocoders import Nominatim
 
-import data_processing as dp
-from plotly_usmap import usmap
+import cityfynders.data_processing as dp
+from cityfynders.plotly_usmap import usmap
 
 
 

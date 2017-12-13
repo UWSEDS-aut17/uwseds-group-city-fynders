@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import geopy as gy
+from geopy.geocoders import Nominatim
 
 
 def read_data():
@@ -139,3 +141,19 @@ def create_rank(natural, human, economy, tertiary, Lat, Lon):
     rank.to_csv("../data/rank_file.csv")
 
     return rank
+
+
+def find_loc(dataframe):
+    """
+    Find latitude and longitude using geopy package.
+    Returnn latitude and longitude.
+    """
+    
+    geolocator = Nominatim()
+    lat = []
+    lon = []
+    for index, row in dataframe.iterrows():
+        loc = geolocator.geocode(row['City'] + ' ' + row['State'] + ' United States')
+        lat.append(loc.latitude)
+        lon.append(loc.longitude)
+    return lat, lon
