@@ -38,18 +38,18 @@ def data_rank(natural, human, economy, tertiary):
         natural['Air'] + natural['Water_quality'] +
         natural['Toxics'] + natural['Hazardous'] +
         natural['Green_score_rank'])
-    natural['Natural_total_rank'] =
-    natural['Natural_total_score'].rank(ascending=1)
-    human['total crime'] = human['Violent'] +
-    human['Rape'] + human['Robbery']
+    natural['Natural_total_rank'] =\
+        natural['Natural_total_score'].rank(ascending=1)
+    human['total crime'] = human['Violent'] +\
+        human['Rape'] + human['Robbery']
     human['crime_rank'] = human['total crime'].rank(ascending=1)
     human['crime_rank'].fillna(
         human['crime_rank'].max() + 1, inplace=True)
     human['hospital_rank'] = human['NumHospital'].rank(ascending=0)
     human['hospital_rank'].fillna(
         human['hospital_rank'].max() + 1, inplace=True)
-    human['early_education_rank'] =
-    human['AvgSATScore'].rank(ascending=0)
+    human['early_education_rank'] =\
+        human['AvgSATScore'].rank(ascending=0)
     human['early_education_rank'].fillna(
         human['early_education_rank'].max() + 1, inplace=True)
     human['Population'] = pd.to_numeric(
@@ -65,8 +65,8 @@ def data_rank(natural, human, economy, tertiary):
         human['crime_rank'] + human['hospital_rank'] +
         human['early_education_rank'] +
         human['advanced_education_rank']).rank(ascending=1)
-    economy['Rank_Unemployment'] =
-    economy['Percent unemployment'].rank(ascending=1)
+    economy['Rank_Unemployment'] =\
+        economy['Percent unemployment'].rank(ascending=1)
     economy['Rank_Sales'] = economy['Local tax rate'].rank(ascending=1)
     economy['Rank_Income'] = economy['Median Income'].rank(ascending=0)
     economy['Rank_Tuition'] = economy['AvgTuition'].rank(ascending=1)
@@ -85,8 +85,8 @@ def data_rank(natural, human, economy, tertiary):
     tertiary['Restaurant_Rank'] = tertiary['Restaurant'].rank(ascending=0)
     tertiary['Museums_Rank'] = tertiary['Museums'].rank(ascending=0)
     tertiary['Libraries_Rank'] = tertiary['Libraries'].rank(ascending=0)
-    tertiary['Park_Rank'] =
-    tertiary['Park_acres_per_1000_residents'].rank(ascending=0)
+    tertiary['Park_Rank'] =\
+        tertiary['Park_acres_per_1000_residents'].rank(ascending=0)
     tertiary['TopRes_Rank'] = tertiary['NumTop200Restau'].rank(ascending=0)
     tertiary['Bar_Rank'].fillna(tertiary['Bar_Rank'].max() + 1, inplace=True)
     tertiary['Restaurant_Rank'].fillna(
