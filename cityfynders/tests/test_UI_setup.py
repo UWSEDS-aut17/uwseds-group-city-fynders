@@ -9,7 +9,14 @@ import pandas as pd
 import plotly
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
-class uisetupget(unittest.TestCase):
+class UI_setup_get(unittest.TestCase):
+
+    """
+    This is to test the UI_Setup.py and the function layout_setup.
+    This function returns a 'Div' class so we test if it returns an none-null
+    object
+
+    """
 
     def test_uisetup(self):
         rank = pd.read_csv('../../data/rank_file.csv')

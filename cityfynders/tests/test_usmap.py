@@ -3,6 +3,14 @@ import pandas as pd
 from cityfynders.plotly_usmap import usmap, newdf
 
 class usmapget(unittest.TestCase):
+    """
+    This is to test the two funcions usmap and newdf in ploltly_usmap.py
+    The frist test is a smoke test to see if the function can run
+    The second test is done by giving a particular user imput (5 factors)
+    and see if the newdf funcion returns a dataframe with the correct
+    ranking of cities
+
+    """
 
     # Smoke test
     def test_usmap(self):
