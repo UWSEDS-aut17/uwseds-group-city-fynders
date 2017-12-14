@@ -173,9 +173,12 @@ def newdf(rank, First_care, Second_care, Third_care, Fourth_care, Fifth_care):
 
 
 def usmap_choose(df):
+    """
+    Customize the plotly usmap styles, including
+    """
     limits = [(0, 10), (10, 20), (20, 30), (30, 40), (40, 50)]
     colors = ["rgb(0,116,217)", "rgb(255,65,54)", "rgb(133,20,75)", "rgb(255,\
-      133,27)", "lightgrey"]
+        133,27)", "lightgrey"]
     cities = []
 
     for i in range(len(limits)):
