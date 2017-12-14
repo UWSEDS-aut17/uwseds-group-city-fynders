@@ -21,7 +21,7 @@ User knowledge requirement:
 - Dropdown lists on the webpage for users to select factors they care.
 - Visualization ranking results on the US map.
 
-## Use Case
+## 3. Use Case
 
 1. General: choosing a city when got a lot of university admission offer.
 Students with a lot of offers from universities might think which university they shall choose. Cities of university might have great impact on their final decision. This webpage-based UI can help with the decision.
