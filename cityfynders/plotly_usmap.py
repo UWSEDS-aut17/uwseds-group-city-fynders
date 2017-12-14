@@ -8,7 +8,7 @@ import pandas as pd
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
 
-def usmap_default(df, category='total'):
+def usmap(df, category='total'):
     """
     This function returns a dotted us map based on the rank
     DataFrame, and layout category.
@@ -156,7 +156,8 @@ def newdf(rank, First_care, Second_care, Third_care, Fourth_care, Fifth_care):
     df['Third'] = rank[Third_care]
     df['Fourth'] = rank[Fourth_care]
     df['Fifth'] = rank[Fifth_care]
-    df['Total'] = (df['First'] * 5 + df['Second'] * 4 + df['Third'] * 3 +
+    df['Total'] = (
+        df['First'] * 5 + df['Second'] * 4 + df['Third'] * 3 +
         df['Fourth'] * 2 + df['Fifth'] * 1).rank(ascending=1)
     df = df.sort_values('Total', ascending=1)
     df['reverse_rank'] = df['Total'].rank(ascending=0)
@@ -167,8 +168,8 @@ def newdf(rank, First_care, Second_care, Third_care, Fourth_care, Fifth_care):
         (df['First']).astype(str) + '<br># ' + Second_care +\
         ': ' + (df['Second']).astype(str) + '<br># ' + Third_care + ': ' +\
         (df['Third']).astype(str) + '<br># ' + Fourth_care + ': ' +\
-         (df['Fourth']).astype(str) + '<br># ' + Fifth_care + ': ' + \
-         (df['Fifth']).astype(str)
+        (df['Fourth']).astype(str) + '<br># ' + Fifth_care + ': ' +\
+        (df['Fifth']).astype(str)
     return df
 
 
