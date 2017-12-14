@@ -1,45 +1,30 @@
 # Functional specification
 
 Problem Statements
-1. Select criteria for city ranking in the four categories
-2. Data collection and joint
-3. General analysis for four categories
-4. Create tools for user interface for selecting factors and visualizing result
+Which city would you like to live in the US?
+1. Get default visualized ranking results through clicking buttons on the webpage.
+2. Users choose the 5 factors they like to get customized ranking results through dropdown list.
 
-## User profile
+## 1. User profile
 
-  The computational environments the user should be familiar with are listed as:
-  - Python
-  - Jupyter notebook
+User knowledge requirement:
+    The computational environments the user might be familiar with are listed as:
+    - Python
+    - Jupyter notebook (optional)
+    - Terminal
+    Bu if the user does not know them well, it's fine. We provide a detailed installation and running on `READMNE.md` or `examples/how_to_use.md`.
 
-Also, users need to be willing to choose the criteria as well as allocate weight value to each selected factors themselves to score city.
+## 2. Elements of the problem statements
 
-## Elements
-
-### Research part
- - General analysis on the top environmental-friendly (social, developed or culturally important) cities
- -  Correlations of those factors and possible causality through PCA analysis.
-
-### Tool part
-- Welcome Page with default research result
-- Create an interactive User Interface to select ranking criteria
+### Cityfynders Tool
+- 5 buttons for default ranking (total and other four cetegories)
+- Dropdown lists on the webpage for users to select factors they care.
 - Visualization ranking results on the US map.
-
-### Notes
-- There will be four main categories for users to choose in the database: Environment, Society, Economy and Tertiary Industry
-- Many cities may only have partial information, so we will only use the information for big cities which have enough data to do the analysis
 
 ## Use Case
 
-**Welcome Page with default research result**
-- Run `main.py` file to prompt up the Welcome Page
-- Present the general research results of the top cities of the four categories
+1. General: choosing a city when got a lot of university admission offer.
+Students with a lot of offers from universities might think which university they shall choose. Cities of university might have great impact on their final decision. This webpage-based UI can help with the decision.
 
-**Users choose ranking criteria and assign weight to each criterion**
-- From all the factors, users pick 5 top criteria they care about and rank them from 1 to 5
-- Calculate the score of each city (Score1* 5 +Score2*4 + Score3 * 3 + Score4*2 + Score5*1) and return the top 3 cities
-
-**Visualization ranking results on the US map**
-- Import a certain US map package showing all the city information
-- Click on a  city to show the rankings of four main categories and top 3 ranking for all the factors
-- Present the top 10 cities on the map with information according to the user ranking criteria
+2. Research: correlations of different factors.
+Get rankings for the consideration of factors, and get correlations from `examples/city_fynder.py`.
