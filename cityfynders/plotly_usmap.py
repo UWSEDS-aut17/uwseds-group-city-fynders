@@ -8,7 +8,7 @@ import pandas as pd
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
 
-def usmap_default(df, category='total'):
+def usmap(df, category='total'):
     """
     This function returns a dotted us map based on the rank
     DataFrame, and layout category.
