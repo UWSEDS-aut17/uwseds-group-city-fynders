@@ -27,4 +27,4 @@ User knowledge requirement:
 Students with a lot of offers from universities might think which university they shall choose. Cities of university might have great impact on their final decision. This webpage-based UI can help with the decision.
 
 2. Research: correlations of different factors.
-Get rankings for the consideration of factors, and get correlations from `examples/city_fynder.py`.
+Get rankings for the consideration of factors, and get correlations from `examples/city_fynder.ipynb` or `examples/how_to_use.md`.
