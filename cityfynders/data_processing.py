@@ -25,18 +25,16 @@ def data_rank(natural, human, economy, tertiary):
     natural, human, economy, tertiary: all in DataFrame format.
     """
 
-    natural['Air'] = natural['Air'].rank(ascending=0)
-    natural['Water_quality'] = natural['Water_quality'].rank(ascending=0)
-    natural['Toxics'] = natural['Toxics'].rank(ascending=0)
-    natural['Hazardous'] = natural['Hazardous'].rank(ascending=0)
+    natural['Air_Rank'] = natural['Air'].rank(ascending=1)
+    natural['Water_Rank'] = natural['Water_quality'].rank(ascending=1)
+    natural['Toxics_Rank'] = natural['Toxics'].rank(ascending=1)
+    natural['Hazardous_Rank'] = natural['Hazardous'].rank(ascending=1)
     natural['Green_score_rank'] = natural['Green_score'].rank(ascending=1)
     natural['Green_score_rank'].fillna(
-        natural['Green_score_rank'].max()+1, inplace=True)
-    natural['Sanitation'].fillna(
-        natural['Sanitation'].max()+1, inplace=True)
+        natural['Green_score_rank'].max() + 1, inplace=True)
     natural['Natural_total_score'] = (
-        natural['Air'] + natural['Water_quality'] +
-        natural['Toxics'] + natural['Hazardous'] +
+        natural['Air_Rank'] + natural['Water_Rank'] +
+        natural['Toxics_Rank'] + natural['Hazardous_Rank'] +
         natural['Green_score_rank'])
     natural['Natural_total_rank'] =\
         natural['Natural_total_score'].rank(ascending=1)
@@ -116,10 +114,10 @@ def create_rank(natural, human, economy, tertiary, Lat, Lon):
     """
 
     rank = pd.DataFrame()
-    rank['Air'] = natural['Air']
-    rank['Water'] = natural['Water_quality']
-    rank['Toxics'] = natural['Toxics']
-    rank['Hazardous'] = natural['Hazardous']
+    rank['Air'] = natural['Air_Rank']
+    rank['Water'] = natural['Water_Rank']
+    rank['Toxics'] = natural['Toxics_Rank']
+    rank['Hazardous'] = natural['Hazardous_Rank']
     rank['Green_score'] = natural['Green_score_rank']
     rank['Natural_total_rank'] = natural['Natural_total_rank']
     rank['City'] = human['City']
