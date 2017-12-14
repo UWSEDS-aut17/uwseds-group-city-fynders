@@ -5,6 +5,12 @@ from geopy.geocoders import Nominatim
 
 class GeoInfoTest(unittest.TestCase):
 
+    def smoke_get_loc(self):
+        geolocator = Nominatim()
+        loc = geolocator.geocode('Shanghai' + ' China')
+        lat = loc.latitude
+        lon = loc.longitude
+
     # One shot test
     def test_get_loc(self):
         geolocator = Nominatim()
