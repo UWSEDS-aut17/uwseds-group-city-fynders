@@ -9,7 +9,8 @@ import cityfynders.data_processing as dp
 
 class DataProcessingTest(unittest.TestCase):
     """
-    Please run this test in cityfynders/ dir
+    Test data_processing.py.
+    Please run this test in the directory cityfynders/
     """
 
     def setUp(self):
