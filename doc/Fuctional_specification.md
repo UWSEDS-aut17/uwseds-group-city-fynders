@@ -8,11 +8,13 @@ Which city would you like to live in the US?
 ## 1. User profile
 
 User knowledge requirement:
+
     The computational environments the user might be familiar with are listed as:
     - Python
     - Jupyter notebook (optional)
     - Terminal
-    Bu if the user does not know them well, it's fine. We provide a detailed installation and running on `READMNE.md` or `examples/how_to_use.md`.
+
+But if the user does not know them well, it's fine. We provide a detailed installation and running on `READMNE.md` or `examples/how_to_use.md`.
 
 ## 2. Elements of the problem statements
 
