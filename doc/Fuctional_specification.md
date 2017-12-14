@@ -1,6 +1,6 @@
 # Functional specification
 
-Problem Statements
+**Problem Statements**
 Which city would you like to live in the US?
 1. Get default visualized ranking results through clicking buttons on the webpage.
 2. Users choose the 5 factors they like to get customized ranking results through dropdown list.
